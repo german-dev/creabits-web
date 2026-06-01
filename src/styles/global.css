@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* CREABITS | DESIGN SYSTEM
+  Arquitectura CSS-First de Tailwind v4.
+  Aquí definimos los tokens globales sin necesidad de JavaScript.
+*/
+
+@theme {
+    /* Tipografía oficial de ingeniería */
+    --font-mono:
+        "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        monospace;
+
+    /* Colores base de la marca (Ejemplo técnico, ajustable después) */
+    --color-creabits-black: #09090b;
+    --color-creabits-white: #fafafa;
+    --color-creabits-accent: #3b82f6;
+}
+
+/* Utilidades base para evitar saltos de layout (CLS) */
+@layer base {
+    html {
+        font-family: var(--font-mono);
+        background-color: var(--color-creabits-black);
+        color: var(--color-creabits-white);
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+}
