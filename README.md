@@ -1,43 +1,24 @@
-# Astro Starter Kit: Minimal
+# CREABITS | Technical Architecture
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+The official repository for CREABITS. A premium digital studio, shared knowledge system, and performance laboratory engineered for extreme scalability, speed, and zero-frictional workflow.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Tech Stack
 
-## 🚀 Project Structure
+- **Framework:** [Astro 6](https://astro.build/) — Island Architecture (Zero-JS by default)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) — Next-gen utility-first CSS driven by Lightning CSS
+- **Language:** TypeScript (Strict Mode Enabled)
+- **Infrastructure:** [Cloudflare Pages](https://pages.cloudflare.com/) — Globally distributed Edge Network
+- **Content:** MDX + Astro Content Collections (Strictly typed with Zod)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📦 Repository Structure
 
 ```text
-/
-├── public/
+creabits/
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+│   ├── assets/       # Optimized global static assets and local fonts
+│   ├── components/   # Atomic UI system (core components & compound blocks)
+│   ├── content/      # Content Collections (Blog, Technical Wiki, Labs)
+│   ├── layouts/      # Master templates (Base, Post, Documentation)
+│   ├── pages/        # File-based routing engine
+│   └── styles/       # Global CSS entry point for Tailwind v4
+└── astro.config.mjs  # Astro configuration & Cloudflare SSR integration
